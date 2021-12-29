@@ -1,0 +1,18 @@
+----------------------------------------------------------
+2021-12-29 takeshi:
+
+Keras and tensor flow installation:
+
+sudo apt-get install -y libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev
+sudo apt-get install -y libjpeg-dev libpng-dev libtiff-dev
+sudo apt-get install -y libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+sudo apt-get install -y libxvidcore-dev libx264-dev
+sudo apt-get install -y libopenblas-dev libatlas-base-dev liblapack-dev gfortran
+sudo apt-get install -y libhdf5-serial-dev
+sudo apt-get install -y python3-tk python-imaging-tk
+sudo apt-get install -y libgtk-3-dev
+python train_simple_nn.py --dataset animals --model output/simple_nn.model --label-bin output/simple_nn_lb.pickle --plot output/simple_nn_plot.png
+vim train_simple_nn.py 
+
+pip install tensorflow
+pip install keras

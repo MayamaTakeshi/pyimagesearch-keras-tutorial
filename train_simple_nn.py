@@ -11,7 +11,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score
 from keras.models import Sequential
 from keras.layers.core import Dense, Dropout
-from keras.optimizers import SGD
+#from keras.optimizers import SGD
+from tensorflow.keras.optimizers import SGD
 from imutils import paths
 import matplotlib.pyplot as plt
 import numpy as np
@@ -126,8 +127,8 @@ plt.style.use("ggplot")
 plt.figure()
 plt.plot(N, H.history["loss"], label="train_loss")
 plt.plot(N, H.history["val_loss"], label="val_loss")
-plt.plot(N, H.history["acc"], label="train_acc")
-plt.plot(N, H.history["val_acc"], label="val_acc")
+plt.plot(N, H.history["accuracy"], label="train_acc")
+plt.plot(N, H.history["val_accuracy"], label="val_acc")
 plt.title("Training Loss and Accuracy (Simple NN)")
 plt.xlabel("Epoch #")
 plt.ylabel("Loss/Accuracy")
